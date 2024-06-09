@@ -1,0 +1,55 @@
+{
+    "app": {
+        "title": "Digiticket",
+        "headerColor": "",
+        "textColor": "black",
+        "statusBarColor": "#ffffff",
+        "leftButton": "none",
+        "statusBar": "transparent",
+        "selfControlLoading": false,
+        "hideAndroidBottomNavigationBar": true,
+        "hideIOSSafeAreaBottom": true,
+        "actionBarHidden": true
+    },
+    "debug": true,
+    "listCSS": ["src/public/css/tailwind.css"],
+    "listSyncJS": [],
+    "listAsyncJS": [],
+    "pages": [
+        "/",
+        "/list-shop",
+        "/booking",
+        "/authentication",
+        "/home",
+        "/search",
+        "/category/*",
+        "/collection/*",
+        "/notification",
+        "/cart",
+        "/profile"
+    ],
+    "template": {
+        "primaryColor": "#186F65",
+        "backgroundColor": "#FBFBFB",
+        "prefixCurrencySymbol": false,
+        "currencySymbol": "đ",
+        "headerLogo": ""
+    },
+    "env": {
+        "VITE_CLIENT_ID": "99DB3MHCAS9V19M",
+        "VITE_CLIENT_SECRET": "FXY1999799UBQXT",
+        "VITE_SHOP_ID": "085a2708-d9e8-4085-95b6-161cbbaeedd3"
+    },
+    "nativeKey": {
+        "selectedShop": "SelectedShop",
+        "selectedShopId": "SelectedShopId",
+        "selectedCollection": "SelectedCollection",
+        "selectedCategory": "SelectedCategory",
+        "scToken": "SC_TOKEN",
+        "zToken": "ZALO_TOKEN",
+        "scRefreshToken": "SC_REFRESH_TOKEN",
+        "cartId": "CART_ID",
+        "cartTotalItem": "CART_TOTAL_ITEM",
+        "userInfo": "USER_INFO"
+    }
+}

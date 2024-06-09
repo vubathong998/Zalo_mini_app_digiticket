@@ -1,0 +1,19 @@
+{
+    "cwd": "",
+    "name": "Digiticket",
+    "framework": "react-typescript",
+    "cssPreProcessor": "scss",
+    "includeTailwind": true,
+    "package": "zmp-ui",
+    "stateManagement": "recoil",
+    "newProject": true,
+    "template": "single-view",
+    "theming": {
+        "customColor": true,
+        "color": "#4469AF",
+        "darkTheme": false,
+        "iconFonts": true,
+        "fillBars": false,
+        "useUiKits": true
+    }
+}

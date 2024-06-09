@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+.zaui-bottom-navigation-content {
+    position: inherit;
+    display: flex;
+    height: calc(var(--zaui-safe-area-inset-bottom) + 48px);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding-bottom: var(--zaui-safe-area-inset-bottom);
+}
+
+.text__ellipsis_1 {
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: break-spaces;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.text__ellipsis_2 {
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: break-spaces;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.overlay {
+    position: relative;
+
+    .overlay-layer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--kt-overlay-bg);
+        transition: all 0.3s ease;
+        opacity: 0;
+    }
+
+    &.overlay-show,
+    &.overlay-block,
+    &:hover {
+        .overlay-layer {
+            transition: all 0.3s ease;
+            opacity: 1;
+        }
+    }
+
+    &.overlay-block {
+        cursor: wait;
+    }
+}
+
+.bgi-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bgi-position-y-top {
+    background-position-y: top;
+}
+
+.bgi-position-y-bottom {
+    background-position-y: bottom;
+}
+
+.bgi-position-y-center {
+    background-position-y: center;
+}
+
+.bgi-position-x-start {
+    background-position-x: left;
+}
+
+.bgi-position-x-end {
+    background-position-x: right;
+}
+
+.bgi-position-x-center {
+    background-position-x: center;
+}
+
+.bgi-position-top {
+    background-position: 0 top;
+}
+
+.bgi-position-bottom {
+    background-position: 0 bottom;
+}
+
+.bgi-position-center {
+    background-position: center;
+}
+.bgi-size-cover {
+    background-size: cover;
+}

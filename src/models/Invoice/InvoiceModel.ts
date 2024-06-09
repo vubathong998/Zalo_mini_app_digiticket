@@ -1,0 +1,55 @@
+import { PaymentMethodEnum } from 'models/paymentMethod';
+import { TransactionPaymentStatusEnum, TransactionTypeEnum } from 'models/transaction';
+import { CurrencyEnum } from './CurencyEnum';
+
+export type BankModel = {
+    AccountName: string;
+    AccountNo: string;
+    BankCode: string;
+    BankName: string;
+    BinCode: string;
+    Branch: string;
+    ShortBankName: string;
+    TempCode: string;
+    Images: Array<{ Url?: string }>;
+};
+export type InvoicePaymentMethod = {
+    Detail?: Array<BankModel>;
+    Id: PaymentMethodEnum;
+    Name: string;
+    Description: string;
+    Images: Array<{ Url?: string }>;
+    PartnerId: number;
+    Url: string;
+};
+export type InvoiceModel = {
+    PaymentMethod: Array<InvoicePaymentMethod>;
+    DistributorId: string;
+    DistributorName: string;
+    OType: TransactionTypeEnum;
+    OGuid: string;
+    OId: number;
+    OCode: string;
+    BalanceCode: string;
+    TransactionCode: string;
+    Amount: number;
+    CurrencyType: CurrencyEnum;
+    PaymentStatus: TransactionPaymentStatusEnum;
+    ReferenceId: string;
+    Description: string;
+    BankName: string | null;
+    ApproveBy: string | null;
+    ApproveByName: string | null;
+    ApproveDate: string;
+    PaymentUrlPublic: string;
+    Id: number;
+    Status: 0 | 1;
+    CreatedDate: string;
+    CreatedBy: number;
+    CreatedByName: string;
+    LastEditedDate: string;
+    LastEditedBy: number;
+    LastEditedByName: string;
+    ProfileData: Record<string, any>;
+    PaymentMethods: Array<any>;
+};

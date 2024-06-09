@@ -1,0 +1,33 @@
+export type CartItemRequestModel = {
+    ProductId: string;
+    ServicePricesId: string;
+    GroupServiceId: string;
+    Count: number;
+    UsingDate: Array<string>;
+    GroupServiceName?: string;
+    ServicePricesName?: string;
+    ProductName?: string;
+    UnitChildName?: string;
+    UnitExchangeRate?: number;
+    UnitChildId?: number;
+    Unit: string;
+    Images?: Array<{ Url?: string }>;
+};
+export type CartItemResponseModel = {
+    CartItemId: string;
+    AppliedVouchers?: any;
+    UsingDate: Array<string>;
+    Count: number;
+    TotalPrice: number;
+    ImageUrl?: Array<{ Url?: string }>;
+    ProductId: string;
+    Unit: string;
+    UnitChildName?: string;
+    UnitExchangeRate?: number;
+    UnitChildId?: number;
+    ProductName?: string;
+    ServicePricesId: string;
+    ServicePricesName?: string;
+    GroupServiceId: string;
+    GroupServiceName: string;
+};
